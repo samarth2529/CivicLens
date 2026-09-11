@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-surface: #f8fafd;
+    --color-card: #ffffff;
+    --color-border: #e3e8ee;
+  }
+  
+  body {
+    background-color: #f8fafd;
+    color: #1f1f1f;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Gemini Soft Ambient Background */
+.bg-gemini-mesh {
+  background-color: #f8fafd;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(66, 133, 244, 0.04) 0px, transparent 40%),
+    radial-gradient(at 90% 10%, rgba(142, 36, 170, 0.04) 0px, transparent 40%),
+    radial-gradient(at 50% 60%, rgba(234, 67, 53, 0.02) 0px, transparent 50%),
+    radial-gradient(at 80% 90%, rgba(52, 168, 83, 0.03) 0px, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Gemini Multi-color Gradient Text */
+.gemini-gradient-text {
+  background: linear-gradient(135deg, #1a73e8 0%, #7c3aed 50%, #e11d48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gemini-blue-purple-text {
+  background: linear-gradient(135deg, #1a73e8 0%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gemini Clean Card */
+.gemini-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid #e3e8ee;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.06), 0 4px 12px 0 rgba(60, 64, 67, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gemini-card:hover {
+  border-color: #c2e7ff;
+  box-shadow: 0 4px 12px 0 rgba(60, 64, 67, 0.10), 0 8px 20px 0 rgba(60, 64, 67, 0.05);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3cad4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa0a6;
+}
